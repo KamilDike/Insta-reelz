@@ -1,8 +1,9 @@
 .videoFooter {
-    height: 10vh;
-    position: relative;
-    bottom: 10vh;
+    position: absolute;
+    bottom: 2vh;
     color: var(--twitch-color);
+    left: 0;
+    right: 0;
 }
 
 .videoFooter__text {

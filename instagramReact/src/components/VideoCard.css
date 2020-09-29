@@ -1,4 +1,5 @@
 .videoCard {
+    position: relative;
     height: 99%;
     width: fit-content;
     scroll-snap-align: start;
