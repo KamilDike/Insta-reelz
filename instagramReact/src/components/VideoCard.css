@@ -1,0 +1,29 @@
+.videoCard {
+    height: 99%;
+    width: fit-content;
+    scroll-snap-align: start;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
+
+.videoCard__player {
+    border-radius: 1%;
+    object-fit: fill;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .videoCard {
+        height: 99%;
+        width: 100%;
+        scroll-snap-align: start;
+        margin-bottom: 1%;
+    }
+
+    .videoCard__player {
+        border-radius: 1%;
+        object-fit: fill;
+        width: 100%;
+    }
+}

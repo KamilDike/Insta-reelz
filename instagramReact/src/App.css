@@ -1,0 +1,52 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.app__top > h1 {
+  text-align: center;
+  color: var(--twitch-color);
+}
+
+.app__top {
+  width: 100%;
+}
+
+.app__logo {
+  height: 10vh;
+}
+
+.app__videos {
+  height: 90vh;
+  width: fit-content;
+
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .app__videos {
+      width: 90vw;
+      height: fit-content;
+
+      overflow: scroll;
+      scroll-snap-type: y mandatory;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+}
+
+.app__videos::-webkit-scrollbar {
+  display: none;
+}

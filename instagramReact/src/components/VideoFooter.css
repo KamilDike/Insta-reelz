@@ -1,0 +1,28 @@
+.videoFooter {
+    height: 10vh;
+    position: relative;
+    bottom: 10vh;
+    color: var(--twitch-color);
+}
+
+.videoFooter__text {
+    -webkit-text-stroke: 0.05vw black;
+    height: 4vh;
+    display: flex;
+    margin-left: 1%;
+}
+
+.videoFooter__text > h3 {
+    margin-left: 1%;
+}
+
+.videoFooter__ticker > .ticker {
+    height: 6vh;
+    -webkit-text-stroke: 0.1vw black;
+    color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1vw;
+    white-space: nowrap;
+}
