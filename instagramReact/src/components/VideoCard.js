@@ -7,6 +7,10 @@ function VideoCard({avatarSrc, channel, shares, title, url, watches}) {
     const [isVideoPlaying, setIsVideoPlaying] = useState(false)
     const videoRef = useRef(null);
 
+    const appHeight = () => document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
+    window.addEventListener('resize', appHeight)
+    appHeight()
+
     const onVideoPress = () => {
         setIsVideoPlaying(!isVideoPlaying)
 

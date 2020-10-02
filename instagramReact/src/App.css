@@ -24,8 +24,8 @@ html {
 }
 
 .app__videos {
-  height: 90vh;
-  width: fit-content;
+  height: 100vh;
+  width: 100vw;
 
   overflow: scroll;
   scroll-snap-type: y mandatory;
@@ -36,8 +36,8 @@ html {
 
 @media only screen and (max-width: 600px) {
   .app__videos {
-      width: 90vw;
-      height: fit-content;
+      width: 100vw;
+      height: calc(100vh - calc(100vh - 100%));
 
       overflow: scroll;
       scroll-snap-type: y mandatory;
