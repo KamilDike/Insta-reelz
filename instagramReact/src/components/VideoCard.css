@@ -1,6 +1,6 @@
 .videoCard {
     position: relative;
-    height: var(--app-height);
+    height: 100vh;
     width: fit-content;
     scroll-snap-align: start;
     margin: 0 auto;
@@ -14,7 +14,8 @@
 
 @media only screen and (max-width: 600px) {
     .videoCard {
-        height: 100vh;
+        height: 90vh;
+        margin-bottom: 10vh;
         width: 100%;
         scroll-snap-align: start;
     }
