@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import './VideoCard.css'
 import VideoFooter from './VideoFooter';
 import VideoHeader from './VideoHeader';
@@ -19,10 +19,17 @@ function VideoCard({avatarSrc, channel, shares, title, url, watches}) {
         }
     }
 
+    const stopVid = () => {
+        videoRef.current.pause()
+        setIsVideoPlaying(false)
+    }
+
     return (
         <div className="videoCard">
             <VideoHeader/>
             <video
+                onTouchMove={stopVid}
+                onWheel={stopVid}
                 ref={videoRef}
                 onClick={onVideoPress}
                 className="videoCard__player"

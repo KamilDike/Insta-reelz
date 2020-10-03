@@ -11,7 +11,7 @@ function VideoFooter({ avatarSrc, channel, title }) {
                 <h3>{channel}</h3>
             </div>
             <div className="videoFooter__ticker">
-                <Ticker mode="smooth" speed="8">
+                <Ticker mode="smooth" speed={8}>
                     {({ index }) => (
                         <>
                             <h1>{title}</h1>
