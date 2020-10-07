@@ -31,30 +31,34 @@ function App() {
   }
 
   return (
-    <div className="app">
     <Router>
-    <Route exact path="/">
-      <Redirect to="/home" />
-    </Route>
-      <Switch>
-        <Route path="/add">
-          <AddClip/>
-        </Route>
-        <Route path="/home">
-        <div className="app__videos">
-            {reels.map(({ avatarSrc, channel, message, url }) => (
-              <VideoCard
-                channel={channel}
-                avatarSrc={avatarSrc}
-                url={url}
-                title={message}
-              />
-            ))}
-        </div>
-        </Route>
-      </Switch>
+      <div className="app">
+        <Switch>
+          <Route exact={true} path="/">
+            <CategoryBar text='test1'/>
+            <CategoryBar text='test2'/>
+            <CategoryBar text='test3'/>
+            <CategoryBar text='test4'/>
+            <CategoryBar text='test5'/>
+          </Route>
+          <Route path="/add">
+            <AddClip/>
+          </Route>
+          <Route path="/home">
+          <div className="app__videos">
+              {reels.map(({ avatarSrc, channel, message, url }) => (
+                <VideoCard
+                  channel={channel}
+                  avatarSrc={avatarSrc}
+                  url={url}
+                  title={message}
+                />
+              ))}
+          </div>
+          </Route>
+        </Switch>
+      </div>
     </Router>
-    </div>
   );
 }
 
