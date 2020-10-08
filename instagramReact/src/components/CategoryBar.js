@@ -12,7 +12,7 @@ function CategoryBar({text,background}) {
 
     return (
         <div className="categoryBar" ref={categoryBar}>
-            <p id="text">{text}</p>
+            <p className="categoryBar__text">{text}</p>
         </div>
     )
 }

@@ -2,6 +2,10 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+a {
+  text-decoration: none;
+}
+
 .app {
   display: grid;
   place-items: center;
